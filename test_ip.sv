@@ -1,6 +1,6 @@
 module test_ip(
     input clk_i,
-    input rst_i,
+    input rst_ni,
 
     input logic [31:0] reg_a_i,
     input logic [31:0] reg_b_i,

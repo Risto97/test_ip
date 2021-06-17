@@ -70,10 +70,10 @@ module test_ip_top
 
     test_ip i_test_ip(
         .clk_i,
-        .rst_i,
-        .reg_a_i(reg_file_to_ip.reg_a.q),
-        .reg_b_i(reg_file_to_ip.reg_b.q),
-        .res_o(ip_to_reg_file.res.d)
+        .rst_ni,
+        .reg_a_i(reg_file_to_ip.reg_a[0].q),
+        .reg_b_i(reg_file_to_ip.reg_b[0].q),
+        .res_o(ip_to_reg_file.res[0].d)
     );
     
 endmodule
