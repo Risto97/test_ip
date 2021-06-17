@@ -1,0 +1,11 @@
+test_ip:
+  incdirs:
+    - ../register_interface/include
+    - ../register_interface/vendor/lowrisc_opentitan/include
+  files:
+    - gen_sv/test_ip_reg_pkg.sv
+    - gen_sv/test_ip_reg_top.sv
+    - test_ip.sv
+    - test_ip_top.sv
+  vlog_opts:
+    - -L register_interface_lib

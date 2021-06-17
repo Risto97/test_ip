@@ -1,0 +1,70 @@
+{
+    name: "test_ip",
+    clock_primary: "clk_i",
+    reset_primary: "rst_ni",
+    bus_device: "reg",
+    bus_host: "",
+
+    regwidth: "32",
+    registers: [
+    { multireg:
+        {
+            name: "REG_A",
+            desc: "Register A",
+            count: "1",
+            cname: "REG_A",
+            swaccess: "rw",
+            hwaccess: "hrw",
+            fields: [
+                { bits: "31:0"
+                }
+            ],
+
+
+        }
+
+    },
+
+    { multireg:
+        {
+            name: "REG_B",
+            desc: "Register B",
+            count: "1",
+            cname: "REG_B",
+            swaccess: "rw",
+            hwaccess: "hrw",
+            fields: [
+                { bits: "31:0"
+                }
+            ],
+
+
+        }
+
+    },
+
+    { multireg:
+        {
+            name: "RES",
+            desc: "Result",
+            count: "1",
+            cname: "RES",
+            swaccess: "ro",
+            hwaccess: "hwo",
+            hwext: "true",
+            fields: [
+                { bits: "31:0"
+                }
+            ],
+
+
+        }
+
+    },
+
+
+    ]
+
+
+
+}
